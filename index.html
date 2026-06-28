@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familienstammbaum Baumhöver / Rohlmann</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Floating Action Button for Printing -->
+    <button class="print-button" onclick="window.print()" title="Stammbaum ausdrucken">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        Stammbaum ausdrucken
+    </button>
+
+    <!-- Main Container -->
+    <div class="family-tree-container">
+        
+        <!-- PAGE 1: OVERVIEW & PARENTS -->
+        <div class="print-page page-1">
+            <header>
+                <h1 class="calligraphy-title">Familienstammbaum</h1>
+                <p class="family-name">Baumhöver / Rohlmann</p>
+            </header>
+
+            <!-- Group Photo -->
+            <div class="photo-section">
+                <div class="photo-frame">
+                    <img src="group-photo.jpg" alt="Die Geschwister Baumhöver und Rohlmann" class="family-photo">
+                </div>
+                <p class="photo-caption">Die Geschwister Baumhöver und Rohlmann</p>
+                <p class="photo-details">Von links nach rechts: Mia Mönkehues, Bernhard Rohlmann, Anni Schmidt, Alfons Baumhöver, Cilly Bohnen</p>
+                <p class="photo-details">Foto Juli 2024</p>
+            </div>
+
+            <!-- Elegant Divider -->
+            <div class="ornament-divider">
+                <svg viewBox="0 0 100 10" width="100%">
+                    <line x1="5" y1="5" x2="43" y2="5" stroke="#6E2A2A" stroke-width="0.5" />
+                    <polygon points="50,2 53,5 50,8 47,5" fill="#6E2A2A" />
+                    <circle cx="40" cy="5" r="0.8" fill="#6E2A2A" />
+                    <circle cx="60" cy="5" r="0.8" fill="#6E2A2A" />
+                    <line x1="57" y1="5" x2="95" y2="5" stroke="#6E2A2A" stroke-width="0.5" />
+                </svg>
+            </div>
+
+            <!-- Section: Parents -->
+            <section class="family-section">
+                <h2 class="section-title">Unsere Eltern</h2>
+                <div class="parents-grid">
+                    <!-- Father -->
+                    <div class="family-card father-card">
+                        <h3>Hubert Baumhöver</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 05.02.1906</p>
+                            <p class="date"><span class="symbol">gest.</span> 30.03.1944</p>
+                            <p class="note">im Krieg in Polen gefallen</p>
+                        </div>
+                    </div>
+                    <!-- Mother -->
+                    <div class="family-card mother-card">
+                        <h3>Maria Baumhöver, <span class="maiden">geb. Kohues</span></h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 28.12.1908</p>
+                            <p class="date"><span class="symbol">gest.</span> 19.05.1994</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE 2: BAUMHÖVER FAMILY -->
+        <div class="print-page page-2">
+            <section class="family-section">
+                <h2 class="section-title">Familie Baumhöver</h2>
+                
+                <!-- Parents Side-by-Side -->
+                <div class="parents-grid">
+                    <!-- Husband -->
+                    <div class="family-card father-card">
+                        <h3>Hubert Baumhöver</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 05.02.1906</p>
+                            <p class="date"><span class="symbol">gest.</span> 30.03.1944</p>
+                            <p class="note">im Krieg in Polen gefallen</p>
+                        </div>
+                    </div>
+                    <!-- Wife -->
+                    <div class="family-card mother-card">
+                        <h3>Maria Baumhöver, <span class="maiden">geb. Kohues</span></h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 28.12.1908</p>
+                            <p class="date"><span class="symbol">gest.</span> 19.05.1994</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="ornament-divider mini">
+                    <svg viewBox="0 0 100 10" width="100%">
+                        <line x1="20" y1="5" x2="45" y2="5" stroke="#6E2A2A" stroke-width="0.5" />
+                        <circle cx="50" cy="5" r="1.2" fill="#6E2A2A" />
+                        <line x1="55" y1="5" x2="80" y2="5" stroke="#6E2A2A" stroke-width="0.5" />
+                    </svg>
+                </div>
+
+                <!-- Children listed vertically in the center -->
+                <div class="siblings-grid">
+                    <!-- Anni -->
+                    <div class="family-card sibling-card">
+                        <h3>Anni Baumhöver</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 26.07.1939</p>
+                            <p class="marriage">
+                                <span class="m-symbol">⚭</span> Franz Schmidt 
+                                <span class="spouse-dates">(* 16.11.1930 &dagger; 03.12.2023)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Cilly -->
+                    <div class="family-card sibling-card">
+                        <h3>Cilly (Cecilia) Baumhöver</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 10.09.1940</p>
+                            <p class="marriage">
+                                <span class="m-symbol">⚭</span> Helmut Bohnen
+                                <span class="spouse-dates">(* 31.12.???? &dagger;)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Alfons -->
+                    <div class="family-card sibling-card">
+                        <h3>Alfons Baumhöver</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 13.05.1943</p>
+                            <p class="date"><span class="symbol">gest.</span> 23.09.2025</p>
+                            <p class="marriage">
+                                <span class="m-symbol">⚭</span> Anne Bauersachs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- PAGE 3: ROHLMANN FAMILY -->
+        <div class="print-page page-3">
+            <section class="family-section">
+                <h2 class="section-title">Familie Rohlmann</h2>
+                
+                <!-- Parents Side-by-Side -->
+                <div class="parents-grid">
+                    <!-- Husband -->
+                    <div class="family-card father-card">
+                        <h3>Heinrich Rohlmann</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> um 1900</p>
+                            <p class="date"><span class="symbol">gest.</span> um 1981</p>
+                        </div>
+                    </div>
+                    <!-- Wife -->
+                    <div class="family-card mother-card">
+                        <h3>Maria Rohlmann, <span class="maiden">geb. Kohues</span></h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 28.12.1908</p>
+                            <p class="date"><span class="symbol">gest.</span> 19.05.1994</p>
+                            <p class="note">verwitwete Baumhöver</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Divider -->
+                <div class="ornament-divider mini">
+                    <svg viewBox="0 0 100 10" width="100%">
+                        <line x1="20" y1="5" x2="45" y2="5" stroke="#6E2A2A" stroke-width="0.5" />
+                        <circle cx="50" cy="5" r="1.2" fill="#6E2A2A" />
+                        <line x1="55" y1="5" x2="80" y2="5" stroke="#6E2A2A" stroke-width="0.5" />
+                    </svg>
+                </div>
+
+                <!-- Children listed vertically in the center -->
+                <div class="siblings-grid">
+                    <!-- Bernhard -->
+                    <div class="family-card sibling-card">
+                        <h3>Bernhard Rohlmann</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 16.10.1948</p>
+                            <p class="marriage">
+                                <span class="m-symbol">⚭</span> Hanni Wolke
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Mia -->
+                    <div class="family-card sibling-card">
+                        <h3>Mia (Maria) Rohlmann</h3>
+                        <div class="card-details">
+                            <p class="date"><span class="symbol">geb.</span> 05.02.1950</p>
+                            <p class="marriage">
+                                <span class="m-symbol">⚭</span> Friedel Mönkehues
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+</body>
+</html>
