@@ -189,6 +189,7 @@ def build_pdf():
     # ==========================================
     # PAGE 1: TITLE & PHOTO & PARENTS
     # ==========================================
+    story.append(Spacer(1, 35)) # 100px (75pt) total top margin (40pt topMargin + 35pt spacer)
     story.append(Paragraph("Familienstammbaum", title_style))
     story.append(Paragraph("Baumhöver / Rohlmann", subtitle_style))
     
@@ -235,7 +236,7 @@ def build_pdf():
     # ==========================================
     # PAGE 2: SIBLINGS / CHILDREN (BAUMHÖVER)
     # ==========================================
-    story.append(Spacer(1, 20)) # Top margin space for printing
+    story.append(Spacer(1, 35)) # 100px (75pt) total top margin (40pt topMargin + 35pt spacer)
     story.append(Paragraph("Familie Baumhöver", section_heading))
     
     # Parents Row
@@ -272,7 +273,7 @@ def build_pdf():
     # ==========================================
     # PAGE 3: SIBLINGS / CHILDREN (ROHLMANN)
     # ==========================================
-    story.append(Spacer(1, 20)) # Top margin space for printing
+    story.append(Spacer(1, 35)) # 100px (75pt) total top margin (40pt topMargin + 35pt spacer)
     story.append(Paragraph("Familie Rohlmann", section_heading))
     
     # Parents Row

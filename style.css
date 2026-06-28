@@ -199,6 +199,7 @@ header {
 
 /* Page Division & Head Cards */
 .print-page {
+    margin-top: 100px;
     margin-bottom: 60px;
 }
 
@@ -432,16 +433,12 @@ header {
     .print-page {
         page-break-after: always !important;
         break-after: page !important;
+        padding-top: 26.5mm !important; /* Equivalent to 100px top margin */
     }
     
     .print-page:last-child {
         page-break-after: avoid !important;
         break-after: avoid !important;
-    }
-
-    /* Add top padding specifically for printed pages 2 and 3 */
-    .page-2, .page-3 {
-        padding-top: 25mm !important;
     }
 
     /* Prevent awkward clipping on print */
