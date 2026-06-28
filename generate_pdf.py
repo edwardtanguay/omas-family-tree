@@ -80,7 +80,7 @@ def create_card(title_html, content_html, width, font_title, font_body):
         ('BACKGROUND', (0,0), (-1,-1), HexColor('#FFFFFF')),
         ('ALIGN', (0,0), (-1,-1), 'CENTER'),
         ('VALIGN', (0,0), (-1,-1), 'MIDDLE'),
-        ('BOX', (0,0), (-1,-1), 0.5, HexColor('#E6DEC9')),
+        ('BOX', (0,0), (-1,-1), 0.5, HexColor('#C5A880')),
         ('LINEABOVE', (0,0), (0,0), 3.0, HexColor('#6E2A2A')), # 3px Burgundy top band
         ('TOPPADDING', (0,0), (-1,-1), 10),
         ('BOTTOMPADDING', (0,0), (-1,-1), 10),
